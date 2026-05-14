@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gordura corporal</title>
+    <style>
+        body{
+            background-color: greenyellow;
+            color: white;
+            font: normal 20pt Arial
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <script>
+        let nome = prompt('Digite o  nome do aluno: ')
+        let idade = parseInt(prompt('Digite a idade do aluno: '))
+        let peso = parseFloat(prompt('Dgite o peso do aluno em Kg: '))
+        let altura = parseFloat(prompt('Dgite a altura do aluno em metros: '))
+        let atestado = parseInt(prompt('o aluno possu atestado médico? 1-sim, 2-não.'))
+        let imc = peso / (altura * altura)
+
+        let statusidade = idade >= 18? 'maior de idade' : 'menor de idade'
+        let statusimc = imc < 18.5? 'abaixo do peso' : imc <= 24.9? 'peso ideal' : 'acima do peso'
+        let treinar = idade >= 18 && atestado === 1? 'pode treinar' : 'náo pode treinar'
+
+        alert (`Maior de idade? ${statusidade} 
+        \nIMC: ${statusimc.toFixed(2)} 
+        \nPode Treinar? ${treinar} `)
+
+
+
+    </script>
+</body>
+</html>
