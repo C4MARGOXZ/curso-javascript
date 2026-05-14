@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>players score</title>
+
+<style>
+    body {
+        color: white;
+        background-color: rgb(236, 122, 122);
+        font: normal 20pt Arial;
+    }   
+</style>
+
+</head>
+
+<body>
+
+<script>
+    let jogador1 = prompt('Type the first player name:')
+    let jogador2 = prompt('Type the second player name:')
+
+    let pontuacao1 = parseFloat(prompt('Type the first player score:'))
+    let pontuacao2 = parseFloat(prompt('Type the second player score:'))
+
+    if (pontuacao1 > pontuacao2) {
+        alert(`${jogador1} won with ${pontuacao1} points!`)
+    }
+
+    else if (pontuacao2 > pontuacao1) {
+        alert(`${jogador2} won with ${pontuacao2} points!`)
+    }
+
+    else {
+        alert(`The players had a draw with ${pontuacao1} points!`)
+    }
+
+</script>
+
+</body>
+</html>

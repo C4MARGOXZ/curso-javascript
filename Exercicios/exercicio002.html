@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt('Digite o primeiro numero: '))
+        let n2 = parseFloat(prompt('Dgite o segundo numero:'))
+        let operacao = parseInt(prompt('Digite a operação desejada:  1 - soma,  2 -subtraçao,  3 - multplicação,  4 - divisão'))
+        let resultado
+
+        if (operacao == 1) {
+            resultado = n1 + n2
+            }
+        else if (operacao == 2) {
+            resultado= n1 - n2
+            }
+        else if (operacao == 3) {
+            resultado = n1 * n2
+            }
+            else if (operacao==4) {
+                resultado = n1/ n2
+            }
+            else {
+                resutado = 'Operação invalida'
+            }
+
+            alert(` Resultado: ${n1} ${operacao === 1 ? '+' : operacao === 2 ? '-' : operacao === 3 ? '*' : '/'} ${n2} = ${resultado}`)
+        
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

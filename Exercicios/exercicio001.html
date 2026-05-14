@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Nome</title>
+    <style>
+        body {
+            color: white;
+            font: normal 20ptArial;
+            background-color: blueviolet;
+        }
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <script>
+        let nome = prompt('Qual é o seu nome?')
+        let idade = parseInt(prompt('Qual e a sua idade?'))
+        alert(`Ola ${nome.toUpperCase()} você tem ${idade} anos!`)
+        document.write(`Nome: ${nome.toUpperCase()} <br/>`)
+        document.write(`Idade: ${idade} <br/>`)
+        if (idade >=18) {
+            document.write('você é maior de idade')
+        } else{
+            document.write('você é menor de idade')
+        }
+
+
+
+    </script>
+</body>
+</html>
