@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>primeros passos com DOM</title>
+    <style>
+        body {
+           background-color: aquamarine;
+           color: azure; 
+           font: 18pt Arial
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>começando a usar </h1>
+    <p>aqui vai o resultado</p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JS</p>
+    <div id ='msg'>clique em mim
+
+
+
+    
+    
+    <script>
+       
+       let corpo = document.body
+       let p1 = document.getElementsByTagName('p')[1] // localza o elemento pelo nome o zero é o primeiro elemento do código
+       window.document.write('está escrito assim: ' + p1.innerText)
+        corpo.style.background = 'black'
+       p1.style.color = 'blue'
+       let d = document.querySelector(' div#msg ')
+       d.innerText = 'flamengo nelesss'
+    </script>
+
+
+</body>
+
+
+</html>

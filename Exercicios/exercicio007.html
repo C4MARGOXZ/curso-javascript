@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercício DOM</title>
+<style>
+    body{
+    background-color: rgb(85, 129, 129);
+        color: white;
+        font: normal 18pt Arial;}
+</style>
+
+</head>
+<body>
+    <h1>Primeiro exerc;icio utilizando DOM</h1>
+    <p>Vamos ver noq vai dar </p>
+
+<div id = 'msg'></div>
+
+</body>
+
+
+<script>
+let nome =prompt('Digite seu nome')
+let idade =parseInt(prompt('Digite sua idade'))
+alert(`Seu nome é ${nome} e voce tem ${idade} anos! `)
+
+let maioridade = idade >= 18? 'voce é maior de idade' : 'voce é menor de idade'
+
+let d = document.querySelector('#msg')
+
+d.innerText = (`Olá ${nome} voce é ${maioridade}`)
+
+if(idade >= 18) {
+document.body.style.background = 'green' }
+
+else{
+    document.body.style.background = 'red'}
+</script>
+</html>
