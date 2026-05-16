@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma com nome do usuário</title>
+    <style>
+        body{
+            font: normal 20pt Arial;}
+            input{
+                font: normal 15pt Arial;
+                width: 150px
+            }
+            div#res{
+                margin-top: 40px;
+            }
+    </style>
+</head>
+<body>
+    <h1><strong>Somando Valores</strong></h1>
+    <input type="number" name="numero1" id="numero1" placeholder="Primeiro número">
+    <input type="number" name="numero2" id="numero2" placeholder="segundo numero">
+    <input type="text" name="nome" id="nome" placeholder="Nome">
+    <input type="button" value="somar" onclick="somar()">
+    <div id='res'>Resultado:</div>
+    <script>
+        const nome1 = document.querySelector('#nome')
+
+        function somar() {
+        let numero1 = document.querySelector('#numero1')
+        let numero2 = document.querySelector('#numero2')
+        let n1 = Number(numero1.value)
+        let n2 = Number(numero2.value)
+        let resultado1 = document.querySelector('#res')
+        let soma = n1 + n2
+        let somaBRL = soma.toLocaleString('pt-br', {
+            style: 'currency',
+            currency: 'BRL'})
+
+        resultado1.innerHTML = `Olá ${nome1.value} o resultado da sua soma foi: ${somaBRL}`
+
+        if (soma < 100) {
+            resultado1.style.background = 'red'}
+        else {
+            resultado1.style.background = 'green'}}
+    </script>
+</body>
+</html>

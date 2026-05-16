@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo de IMC</title>
+<style>
+    body {
+        background-color: rgb(89, 69, 107);
+        font: 18pt Arial;
+        color:  white;}
+
+        div#res {
+
+            margin-top: 50px;
+        }
+
+        input{
+            font:normal 12pt arial;
+          width: 200px;
+            
+        }
+</style>
+
+
+
+</head>
+<body>
+    <h1>Calculadora de <strong>IMC</strong></h1>
+    <input type="number" name="kg" id="kg"placeholder = 'Digite o peso atual em kg'>
+    <input type="number" name="metros" id="metros" placeholder="Digite a altura em metros">
+    <input type="button" value="calcular" onclick = 'calcular()'>
+    <div id = 'res'>Resultado: </div>
+
+
+    <script>
+        function calcular(){
+        let peso = document.querySelector('#kg')
+        let altura = document.querySelector('#metros')
+        let resultado = document.querySelector('#res')
+        let p1 = Number(peso.value)
+        let a1 = Number(altura.value)
+        let imc = p1 / (a1 * a1 ) 
+        
+        resultado.innerHTML = `Olá, seu peso é: ${p1} Kgs, Voce tem ${a1} metros de altura seu IMC é de: ${imc.toFixed(2)}`
+
+        if (imc <18.5 ){
+            resultado.style.background = 'cyan'
+            resultado.innerHTML += 'Voce estábaixo do peso'}
+        else if (imc >=18.5 && imc <= 25.9){
+            resultado. style.background = 'greenyellow'
+            resultado.innerHTML += 'Voce está no Peso ideal'}
+        else{
+            resultado.style.background = 'red'
+            resultado.innerHTML += 'Voce está acima do peso'}}
+
+
+
+
+    </script>
+
+
+
+
+
+
+</html>
