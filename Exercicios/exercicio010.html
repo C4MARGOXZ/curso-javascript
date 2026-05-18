@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>plantões</title>
+    
+</head>
+<body>
+    <div id ='medicos'></div>
+    <script>
+    let dia = new Date()
+    let plantoes = dia.getDay()
+
+    switch(plantoes){
+        case 0:
+        document.querySelector('#medicos').innerHTML = 'domingo, Plantonista: Dr.Dante'
+        break;
+
+        case 1:
+            document.querySelector('#medicos').innerHTML = '<p>Segunda, <strong>plantão de emergencia.</strong> Plantonista: Dr. Vergil</p>'
+            break;
+
+        case 2:
+            document.querySelector('#medicos').innerHTML = '<p>Terça, <strong>plantão de emergencia.</strong> Plantonista: Dr.Kratos</p>'
+            break;
+
+        case 3:
+            document.querySelector('#medicos').innerHTML = '<p>Quarta, <strong>plantão de emergencia.</strong> Plantonista: Dr.Atreus</p>'
+            break;
+
+        case 4:
+            document.querySelector('#medicos').innerHTML = '<p>Quinta, <strong>plantão de emergencia.</strong> Plantonista: Dr.Goku</p>'
+            break;
+        case 5:
+            document.querySelector('#medicos').innerHTML = '<p>Sexta, <strong>plantão de emergencia.</strong> Plantonista: Dr.Vegeta</p> '
+            break;
+
+        case 6:
+            document.querySelector('#medicos').innerHTML = '<p>Sábado, Plantonista: Dr.Broly</p>'
+            break;}
+
+        if (plantoes == 0 || plantoes ==6){
+            document.querySelector('#medicos').innerHTML += '<p>Atendimento limitado aos finais de semana</p>'
+        }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+</html>
