@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+    <style>
+        body{
+            background-color: rgb(87, 62, 110);
+            color: white;
+            font: normal 18pt Arial}
+            input{
+                font: normal 18pt Arial;
+                width: 400px;}
+
+            #res{
+                margin-top: 50px;}               
+    </style>
+
+</head>
+<body>
+    <h1><strong>Sistema de Multas</strong></h1>
+    <p>Sistema para verificação da velocidade do veículo</p>
+    <input type="number" name="txtvel" id="txtvel" placeholder="Digite a velocidade em Km/h">
+    <input type="button" value="verificar" onclick = 'verificar()'>
+    <input type="button" value="limpar" onclick = 'limpar()'>
+    <div id = 'res'></div>
+
+    <script>
+        function verificar(){
+
+        let velocidade = document.querySelector('#txtvel')
+        let vel1 = Number(velocidade.value)
+        let resultado = document.querySelector('#res')
+
+        resultado.innerHTML = `<p>Você estava a: <strong>${vel1} Km/h</strong></p> `
+
+        if (vel1 > 80 && vel1 < 100){
+            resultado.innerHTML += '<p>Você foi <strong>multado</strong>, por ultrapassar a Velocidade limite de 80Km/h.</p> '
+            resultado.style.background = 'orange'}
+        
+        
+        else if (vel1 >= 100){
+            resultado.innerHTML += '<p> <strong>Multa gravíssima</strong>, você estava muito acima da velocidade máxima da via 80Km/h.</p>'
+            resultado.style.background = 'red'
+        }
+        else { 
+            resultado.innerHTML += '<p>Você estava dentro do limite de velocidade.</p>  '
+            resultado.style.background = 'green'}
+            
+            resultado.innerHTML += '<p>Use sempre o cinto de segurança!</p>'}
+
+        function limpar(){
+            document.querySelector('#res').innerHTML = ''
+            document.querySelector('#res').style.background = 'transparent'
+            document.querySelector('#txtvel').value = ''}
+    </script>
+</body>
+</html>
