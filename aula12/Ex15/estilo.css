@@ -1,0 +1,31 @@
+body{
+background: rgb(71, 71, 255);
+font: normal 15pt Arial;
+}
+header{
+ color: white;
+ text-align: center;
+}
+
+section{
+    background:  white; 
+    border-radius: 10px; /* aredonda a borda */
+    padding: 15px; /* aumenta o tamanhoda caixa */
+    width: 500px; /* largura */
+    margin: auto; /* centraliza a caixa */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font: italic;
+}   
+#foto{
+width: 250px;
+height: 250px;
+border-radius: 50%;
+object-fit: cover;
+
+}
