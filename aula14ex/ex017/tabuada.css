@@ -1,0 +1,112 @@
+css/* ===== RESET E BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* faz padding não aumentar o tamanho do elemento */
+}
+
+/* ===== BODY ===== */
+body {
+  background: linear-gradient(
+    135deg,
+    #1a1aff,
+    #0000aa
+  ); /* gradiente diagonal azul */
+  font-family: 'Segoe UI', sans-serif; /* fonte mais moderna */
+  font-size: 15pt;
+  min-height: 100vh; /* ocupa a altura toda da tela */
+  display: flex;
+  flex-direction: column; /* empilha header, section e footer verticalmente */
+  align-items: center; /* centraliza tudo horizontalmente */
+  justify-content: center; /* centraliza tudo verticalmente */
+  gap: 20px; /* espaço entre os elementos */
+}
+
+/* ===== HEADER ===== */
+header {
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem; /* título grande */
+  letter-spacing: 3px; /* espaço entre as letras */
+  text-transform: uppercase; /* deixa tudo maiúsculo */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* sombra sutil no texto */
+}
+
+/* ===== SECTION (caixa principal) ===== */
+section {
+  background: white;
+  border-radius: 16px; /* bordas bem arredondadas */
+  padding: 30px; /* espaço interno generoso */
+  width: 500px; /* largura fixa */
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3); /* sombra mais pronunciada */
+}
+
+/* ===== DIV DOS INPUTS ===== */
+section > div:first-child {
+  display: flex; /* coloca os inputs lado a lado */
+  flex-wrap: wrap; /* quebra linha se não couber */
+  gap: 10px; /* espaço entre os inputs */
+  margin-bottom: 20px; /* espaço abaixo dos inputs */
+}
+
+/* ===== INPUTS E SELECT ===== */
+input[type='number'],
+select {
+  padding: 10px 14px; /* espaço interno */
+  border: 2px solid #ddd; /* borda cinza */
+  border-radius: 8px; /* bordas arredondadas */
+  font-size: 14pt;
+  outline: none; /* remove o contorno padrão do browser */
+  transition: border 0.2s; /* animação suave ao focar */
+  flex: 1; /* ocupa o espaço disponível */
+}
+
+input[type='number']:focus,
+select:focus {
+  border-color: #1a1aff; /* borda azul ao focar no campo */
+}
+
+/* ===== BOTÃO ===== */
+input[type='button'] {
+  background: #1a1aff; /* fundo azul */
+  color: white;
+  border: none; /* remove borda padrão */
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 13pt;
+  cursor: pointer; /* cursor de mãozinha */
+  transition:
+    background 0.2s,
+    transform 0.1s; /* animação suave */
+  width: 100%; /* ocupa a largura toda */
+}
+
+input[type='button']:hover {
+  background: #0000cc; /* azul mais escuro ao passar o mouse */
+}
+
+input[type='button']:active {
+  transform: scale(0.97); /* leve encolhimento ao clicar */
+}
+
+/* ===== DIV DE RESULTADO ===== */
+#res {
+  background: #f4f4ff; /* fundo levemente azulado */
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 50px; /* altura mínima mesmo vazio */
+  font-size: 13pt;
+  line-height: 1.8; /* espaço entre as linhas */
+  color: #333; /* cinza escuro */
+}
+
+/* ===== FOOTER ===== */
+footer {
+  color: rgba(255, 255, 255, 0.7); /* branco semi-transparente */
+  text-align: center;
+  font-style: italic;
+  font-size: 11pt;
+}

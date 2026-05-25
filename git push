@@ -1,0 +1,78 @@
+[33mcommit c5d09597dcab4503205efa7dd362566d8ce4a63e[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: C4MARGOXZ <murilo.camargozac@gmail.com>
+Date:   Mon May 18 16:31:52 2026 -0300
+
+    Add README with project details and technologies
+
+[33mcommit 40513be742ebbbcfebf2eeca64f059af06c4cca6[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Mon May 18 16:19:46 2026 -0300
+
+     exercicios javascript
+
+[33mcommit dac6380f27a43cd17c1c8ab68e839d3025821766[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Mon May 18 16:19:20 2026 -0300
+
+    projeto com verificador de idade usando como base exercicios anteriores
+
+[33mcommit 901c86d81561fbf7dfc60db8928f2df985737298[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Mon May 18 16:18:46 2026 -0300
+
+     projeto horario do dia usando como base o modelo
+
+[33mcommit 20ee97160aa7c1e0a3e1ad82e4a4069377627656[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Mon May 18 16:18:15 2026 -0300
+
+    modelo a ser usado para exercicios futuros
+
+[33mcommit bf013be0332072a382c021acf0e6407a9fdcdaeb[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Mon May 18 16:17:44 2026 -0300
+
+    aprendendo switch e exercicio básico
+
+[33mcommit 3c200dc94dfa0e7dcd03cdbfcb87d79888e7c1b7[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Fri May 15 22:48:13 2026 -0300
+
+    aprendendo a utilizar DOM
+
+[33mcommit a4e211bab6a2bf67c2a0ca78dbd841ba0e0ea3ba[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Thu May 14 23:29:22 2026 -0300
+
+    primeiro exercicio usando DOM
+
+[33mcommit 585033e5efe3b765451379c08fc6ab83c237236d[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Thu May 14 23:18:42 2026 -0300
+
+    exercicio DOM com querySelector
+
+[33mcommit 1d71e693029c3fbbcdb953f8785ba7048ec3807c[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Thu May 14 16:05:30 2026 -0300
+
+    Exercício de cálculo de IMC
+
+[33mcommit 3d94233daa2f061113085ae6b9131551b1867279[m
+Merge: d8e7bb4 985f302
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Thu May 14 15:21:13 2026 -0300
+
+    Merge branch 'main' of https://github.com/C4MARGOXZ/curso-javascript
+
+[33mcommit d8e7bb4f12dc5d18f98bd9f61f8516fcd4434ddd[m
+Author: Murilo Camargo <murilo.camargozac@gmail.com>
+Date:   Thu May 14 15:15:01 2026 -0300
+
+    primeiro commit - exercicios 002 e 003
+
+[33mcommit 985f3026c7846f1fcafb70dcc309cb94ab49751a[m
+Author: C4MARGOXZ <murilo.camargozac@gmail.com>
+Date:   Thu May 14 15:12:41 2026 -0300
+
+    Initial commit

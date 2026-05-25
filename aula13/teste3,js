@@ -1,0 +1,7 @@
+let c = 1;
+let numero = 7;
+
+while (c <= 10) {
+  console.log(`${numero} X ${c} = ${numero * c}`);
+  c++;
+}

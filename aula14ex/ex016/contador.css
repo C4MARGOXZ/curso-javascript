@@ -1,0 +1,117 @@
+/* ===== RESET E BASE ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* faz padding não aumentar o tamanho do elemento */
+}
+
+/* ===== BODY ===== */
+body {
+  background: #0f0f0f; /* fundo preto */
+  font-family: 'Courier New', monospace; /* fonte estilo terminal */
+  font-size: 15pt;
+  min-height: 100vh; /* ocupa a altura toda da tela */
+  display: flex;
+  flex-direction: column; /* empilha os elementos verticalmente */
+  align-items: center; /* centraliza horizontalmente */
+  justify-content: center; /* centraliza verticalmente */
+  gap: 20px;
+}
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: #00ff88; /* verde neon */
+  font-size: 2.5rem;
+  letter-spacing: 6px; /* espaço entre letras estilo terminal */
+  text-transform: uppercase;
+  text-shadow: 0 0 20px #00ff88; /* brilho neon */
+}
+
+/* ===== SECTION (caixa principal) ===== */
+section {
+  background: #1a1a1a; /* cinza bem escuro */
+  border: 2px solid #00ff88; /* borda verde neon */
+  border-radius: 4px; /* quase sem arredondamento, estilo brutal */
+  padding: 30px;
+  width: 500px;
+  box-shadow: 0 0 30px rgba(0, 255, 136, 0.2); /* brilho externo neon */
+}
+
+/* ===== DIV DOS INPUTS ===== */
+section > div:first-child {
+  display: flex; /* inputs lado a lado */
+  flex-wrap: wrap; /* quebra linha se não couber */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* ===== INPUTS ===== */
+input[type='number'] {
+  background: #0f0f0f; /* fundo preto */
+  color: #00ff88; /* texto verde neon */
+  border: 1px solid #00ff88;
+  border-radius: 4px;
+  padding: 10px 14px;
+  font-size: 13pt;
+  font-family: 'Courier New', monospace;
+  outline: none;
+  flex: 1;
+  transition: box-shadow 0.2s;
+}
+
+input[type='number']:focus {
+  box-shadow: 0 0 10px #00ff88; /* brilho ao focar */
+}
+
+/* ===== BOTÃO ===== */
+input[type='button'] {
+  background: #00ff88; /* fundo verde neon */
+  color: #0f0f0f; /* texto preto */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 13pt;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition:
+    background 0.2s,
+    transform 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+input[type='button']:hover {
+  background: #00cc6a; /* verde mais escuro ao passar o mouse */
+}
+
+input[type='button']:active {
+  transform: scale(0.97); /* leve encolhimento ao clicar */
+}
+
+/* ===== DIV DE RESULTADO ===== */
+#res {
+  background: #0f0f0f; /* fundo preto */
+  border: 1px solid #333; /* borda cinza escura */
+  border-radius: 4px;
+  padding: 16px;
+  min-height: 50px;
+  font-size: 13pt;
+  font-family: 'Courier New', monospace;
+  color: #00ff88; /* texto verde neon */
+  line-height: 1.8;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  color: rgba(0, 255, 136, 0.4); /* verde neon semi-transparente */
+  text-align: center;
+  font-style: italic;
+  font-size: 11pt;
+  font-family: 'Courier New', monospace;
+}
