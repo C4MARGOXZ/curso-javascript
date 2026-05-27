@@ -11,3 +11,4 @@ Repositório com exercícios e projetos feitos durante meus estudos de JavaScrip
 - Verificador de idade
 - Horário do dia
 - Exercícios DOM
+- Manipulação básica de arrays
