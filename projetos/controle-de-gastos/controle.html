@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Controle de gastos</title>
+    <link rel="stylesheet" href="controle.css" />
+  </head>
+  <body>
+    <header>
+      <h1><strong>Lista para controle de gastos</strong></h1>
+    </header>
+
+    <section>
+      <input
+        type="text"
+        name="txtnome"
+        id="txtnome"
+        placeholder="Nome do gasto"
+      />
+      <input type="number" name="txtnum" id="txtnum" placeholder="Valor" />
+      <input type="button" value="adicionar" onclick="adicionar()" />
+      <ul id="lista"></ul>
+      <div id="total"></div>
+    </section>
+
+    <script src="controle.js"></script>
+  </body>
+</html>
